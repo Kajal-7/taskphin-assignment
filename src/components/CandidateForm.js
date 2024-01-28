@@ -114,7 +114,7 @@ const CandidateForm = () => {
             <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
               CGPA out of 10
             </label>
-            <input required className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="" value={cgpa} onChange={(e) => setcgpa(e.target.value)} />
+            <input required className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="number" placeholder="" value={cgpa} onChange={(e) => setcgpa(e.target.value)} />
           </div>
           <p className="px-3 text-gray-400 text-xs italic">Add the most recent qualification</p>
         </div>
@@ -175,7 +175,6 @@ const CandidateForm = () => {
           <div className="w-full px-3">
             <Button title="Add candidate" type="submit" />
           </div>
-
         </div>
       </form>
     </div>
