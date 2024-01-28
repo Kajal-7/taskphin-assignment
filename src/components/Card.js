@@ -8,6 +8,10 @@ import edit from '../assets/edit.svg'
 import Example from './EditModal'
 import money from '../assets/money.svg'
 
+/*
+@description
+The component renders a card to display candidate information.
+*/
 const Card = ({ candidateInfo, resetCandidates }) => {
     const [isOpen, setisOpen] = useState(false);
     const [showEditModal, setshowEditModal] = useState(false)

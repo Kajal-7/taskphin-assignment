@@ -2,9 +2,12 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import SuccessAlert from '../ui/SuccessAlert'
 import WarningAlert from "../ui/WarningAlert"
-
 import Button from '../ui/Button'
 
+/*
+@description
+The component renders a edit modal to update candidate application status.
+*/
 export default function Example({ open, setOpen, id, resetCandidates }) {
     const possibleCandidateStatus = ['Contacted', 'Interview Scheduled', 'Offer Extended', 'Hired', 'Rejected']
     const [success, setsuccess] = useState(false)

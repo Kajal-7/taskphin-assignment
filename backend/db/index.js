@@ -39,11 +39,6 @@ dcIDrL/9lCutFSpmImGDl4Lppf0vVKL78teSmWvZG2KYtO4af2YNheth7sbLjAPQ
     };
 
     const client = new pg.Client(config);
-    // client.connect(function (err) {
-    //     if (err)
-    //         throw err;
-    //     console.log("Db connected")
-    // });
     client.connect()
     return client
 }

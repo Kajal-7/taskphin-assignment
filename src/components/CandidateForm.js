@@ -3,6 +3,10 @@ import Button from '../ui/Button'
 import SuccessAlert from '../ui/SuccessAlert'
 import WarningAlert from '../ui/WarningAlert'
 
+/*
+@description
+The component renders a form to add new candidate.
+*/
 const CandidateForm = () => {
   const [firstName, setfirstName] = useState('')
   const [lastName, setlastName] = useState('')
@@ -36,8 +40,7 @@ const CandidateForm = () => {
         setsuccessMsg(false)
         seterrMsg(true)
       }
-      console.log(res);
-
+      
       setcgpa('')
       setcollege('')
       setcourse('')

@@ -40,7 +40,7 @@ const DisplayCandidates = () => {
       sethired(data[3])
       setrejected(data[4])
     } catch (err) {
-      console.log(err)
+        throw new Error('Can not get data from backend')
     }
   }
 

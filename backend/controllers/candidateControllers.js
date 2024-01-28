@@ -23,7 +23,6 @@ export const getAllCandidates = async (req, response) => {
     if (isError) {
         response.status(500).json({ "Error": "Can not get candidates" })
     } else {
-        // console.log(result)
         response.status(200).json({ "candidates": result })
     }
 }
@@ -38,7 +37,6 @@ export const createCandidate = (req, response) => {
         VALUES 
         ($1, $2, $3,$4,$5,$6,$7,$8,$9,$10, $11);`, values, (err, res) => {
         response.status(err ? 500 : 200).json(err ? { "error": "Can not get candidates" } : { "msg": "Candidate Inserted" })
-        // console.log(err ? err.stack : res)
     })
 
 }
@@ -54,7 +52,6 @@ export const updateCandidate = (req, response) => {
             SET current_status = $1
             WHERE id=$2;`, [newCurrentStatus, candidateId], (err, res) => {
             response.status(err ? 500 : 200).json(err ? { "error": "Can not update candidate" } : { "msg": "Candidate Updated" })
-            // console.log(err ? err.stack : res)
         })
 
     } else {

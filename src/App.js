@@ -5,9 +5,12 @@ import DisplayCandidates from './pages/DisplayCandidates';
 import Footer from './footer/Footer'
 import MainNavbar from './header/MainNavbar';
 import Home from './pages/Home'
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+/*
+@description
+The component renders the main component of the app HireTracker.
+*/
 function App() {
   return (
     <div className="App font-epilogue min-h-screen flex flex-col bg-[#13131a]">
