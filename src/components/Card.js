@@ -6,6 +6,7 @@ import downwardArrow from "../assets/downwardArrow.svg"
 import upwardArrow from "../assets/upwardArrow.svg"
 import edit from '../assets/edit.svg'
 import Example from './EditModal'
+import money from '../assets/money.svg'
 
 const Card = ({ candidateInfo, resetCandidates }) => {
     const [isOpen, setisOpen] = useState(false);
@@ -38,7 +39,7 @@ const Card = ({ candidateInfo, resetCandidates }) => {
                     />}</span>
                 </div>
 
-                <span className="inline-block rounded-lg px-3 py-1 text-sm font-semibold text-white mt-2 mb-3" style={{ backgroundColor: candidateInfo.score>4.5 ? '#4ACD8D' : (candidateInfo.score>=3 ? '#FAAA1E': '#FF4C60') }}>Score: {candidateInfo.score}</span>
+                <span className="inline-block rounded-lg px-3 py-1 text-sm font-semibold text-white mt-2 mb-3" style={{ backgroundColor: candidateInfo.score > 4.5 ? '#4ACD8D' : (candidateInfo.score >= 3 ? '#FAAA1E' : '#FF4C60') }}>Score: {candidateInfo.score}</span>
                 <div className="flex justify start items-center mb-1">
                     <img
                         src={email}
@@ -63,6 +64,16 @@ const Card = ({ candidateInfo, resetCandidates }) => {
 
             {isOpen &&
                 <div className="px-4 pb-2">
+                    <div className="flex justify-start mb-3">
+                        <img
+                            src={money}
+                            alt='money'
+                            className={`h-6 w-6 mr-3`}
+                        />
+                        <p className="text-gray-700 text-base">
+                            {candidateInfo.expected_salary} - Expected Salary
+                        </p>
+                    </div>
                     <div className="flex justify-start mb-3">
                         <img
                             src={college}
