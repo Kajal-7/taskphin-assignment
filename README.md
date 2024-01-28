@@ -1,7 +1,7 @@
 # Taskphin - HireTracker
 
 ## Overview
-HireTracker is a web application 
+HireTracker, a web application designed for recruiters, serves as a comprehensive tool for managing candidate data efficiently.
 
 ## Deployed Wesite Link
 
@@ -33,7 +33,7 @@ HireTracker is a web application
 - Make sure you have node installed in your local environment by running `node -v` in your terminal
 - Install necesssary dependencies by `npm install` in the root directory and backend directory 
 - Run the server by `npm start` and in backend directory `node server.js`
-- The application uses database deployed on digital using using aiven and details are public in `/backend/db/index.js`. If you want to use your database then update the config details in the same and also update url of api calls in frontend in `src/components/CandidateForm.js` , `src/components/EditModal.js`, `src/pages/DisplayCandidates.js`,
+- The application uses database deployed on digital ocean using aiven and details are public in `/backend/db/index.js`. If you want to use your database then update the config details in the same and also update url of api calls in frontend in `src/components/CandidateForm.js` , `src/components/EditModal.js`, `src/pages/DisplayCandidates.js`,
 ---
 
 ## Demonstration
@@ -42,3 +42,5 @@ HireTracker is a web application
 
 ## Contact
 ### Linkedin Profile [here](https://www.linkedin.com/in/kajalkaushal/).
+
+# Made by Kajal Kaushal 
