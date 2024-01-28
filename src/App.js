@@ -1,4 +1,3 @@
-import './App.css';
 import './components/CandidateForm'
 import CandidateForm from './components/CandidateForm';
 import DisplayCandidates from './pages/DisplayCandidates';
