@@ -28,7 +28,7 @@ const DisplayCandidates = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:8080/api/candidate/all')
+      const res = await fetch('https://taskphin-assignment.onrender.com/api/candidate/all')
       if (!res.ok) {
         throw new Error('Network response was not ok');
       }

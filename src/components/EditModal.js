@@ -12,7 +12,7 @@ export default function Example({ open, setOpen, id, resetCandidates }) {
     const [status, setstatus] = useState('')
 
     const editCandidate = () => {
-        fetch(`http://localhost:8080/api/candidate/edit/${id}`, {
+        fetch(`https://taskphin-assignment.onrender.com/api/candidate/edit/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

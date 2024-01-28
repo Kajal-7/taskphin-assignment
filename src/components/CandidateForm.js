@@ -20,7 +20,7 @@ const CandidateForm = () => {
 
   function addCandidate(e) {
     e.preventDefault()
-    fetch('http://localhost:8080/api/candidate/new', {
+    fetch('https://taskphin-assignment.onrender.com/api/candidate/new', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
